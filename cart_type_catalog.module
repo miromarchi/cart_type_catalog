@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Type catalog feature.
+ */
+
+include_once 'cart_type_catalog.features.inc';
