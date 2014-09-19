@@ -76,8 +76,8 @@ function cart_type_catalog_strongarm() {
     2 => 'body',
     3 => 'field_cart_editor',
     4 => 'field_cart_publisher',
-    5 => 'field_cart_year',
-    6 => 'field_cart_language',
+    5 => 'field_cart_language',
+    6 => 'field_cart_year',
   );
   $export['content_complete_fields_cart_catalog'] = $strongarm;
 
@@ -112,6 +112,12 @@ function cart_type_catalog_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cart_vmode_curator' => array(
+        'custom_settings' => FALSE,
+      ),
+      'cart_vmode_sponsor' => array(
         'custom_settings' => FALSE,
       ),
     ),

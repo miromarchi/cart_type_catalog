@@ -158,7 +158,7 @@ function cart_type_catalog_field_default_field_instances() {
       'module' => 'entityreference',
       'settings' => array(
         'entityreference_autocreate' => array(
-          'active' => 1,
+          'active' => 0,
           'author' => '',
           'author_current_user' => 1,
         ),
@@ -384,7 +384,7 @@ function cart_type_catalog_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => '',
+      'file_directory' => 'catalogs',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -396,11 +396,32 @@ function cart_type_catalog_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'reference' => 0,
+            'remote' => 'remote',
+            'remotefile' => 0,
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
         'manualcrop_enable' => 1,
         'manualcrop_inline_crop' => 0,
-        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_crop' => 1,
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'cart_img_circle' => 0,
@@ -688,7 +709,7 @@ function cart_type_catalog_field_default_field_instances() {
       'module' => 'entityreference',
       'settings' => array(
         'entityreference_autocreate' => array(
-          'active' => 1,
+          'active' => 0,
           'author' => '',
           'author_current_user' => 1,
         ),
@@ -805,7 +826,7 @@ function cart_type_catalog_field_default_field_instances() {
       'module' => 'entityreference',
       'settings' => array(
         'entityreference_autocreate' => array(
-          'active' => 1,
+          'active' => 0,
           'author' => '',
           'author_current_user' => 1,
         ),
