@@ -203,5 +203,19 @@ function cart_type_catalog_strongarm() {
   );
   $export['panelizer_defaults_node_cart_catalog'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_cart_catalog_pattern';
+  $strongarm->value = 'catalogs/[node:title]';
+  $export['pathauto_node_cart_catalog_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplify_nodes_cart_catalog';
+  $strongarm->value = array();
+  $export['simplify_nodes_cart_catalog'] = $strongarm;
+
   return $export;
 }
