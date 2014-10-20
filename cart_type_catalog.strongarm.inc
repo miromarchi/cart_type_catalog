@@ -120,11 +120,20 @@ function cart_type_catalog_strongarm() {
       'cart_vmode_sponsor' => array(
         'custom_settings' => FALSE,
       ),
+      'cart_vmode_publisher' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
+        'path' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),

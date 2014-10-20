@@ -37,6 +37,7 @@ features[field_instance][] = node-cart_catalog-field_cart_linkedin_link
 features[field_instance][] = node-cart_catalog-field_cart_links_web
 features[field_instance][] = node-cart_catalog-field_cart_publisher
 features[field_instance][] = node-cart_catalog-field_cart_rss_link
+features[field_instance][] = node-cart_catalog-field_cart_shop_link
 features[field_instance][] = node-cart_catalog-field_cart_textby
 features[field_instance][] = node-cart_catalog-field_cart_twitter_link
 features[field_instance][] = node-cart_catalog-field_cart_year

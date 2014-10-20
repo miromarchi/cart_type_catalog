@@ -121,6 +121,38 @@ function cart_type_catalog_panelizer_defaults() {
     $display->content['new-85a66f0c-9fba-45de-8766-0cce5a0df255'] = $pane;
     $display->panels['one'][2] = 'new-85a66f0c-9fba-45de-8766-0cce5a0df255';
     $pane = new stdClass();
+    $pane->pid = 'new-d93fdf70-1e04-49f7-9a01-675d3a7814fe';
+    $pane->panel = 'one';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_cart_shop_link';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'link_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'text-center',
+    );
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = 'd93fdf70-1e04-49f7-9a01-675d3a7814fe';
+    $display->content['new-d93fdf70-1e04-49f7-9a01-675d3a7814fe'] = $pane;
+    $display->panels['one'][3] = 'new-d93fdf70-1e04-49f7-9a01-675d3a7814fe';
+    $pane = new stdClass();
     $pane->pid = 'new-d1c4d465-d69a-4413-918a-4ad0db8428f5';
     $pane->panel = 'three';
     $pane->type = 'views_panes';

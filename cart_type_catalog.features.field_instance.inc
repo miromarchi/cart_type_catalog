@@ -785,6 +785,65 @@ function cart_type_catalog_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-cart_catalog-field_cart_shop_link'
+  $field_instances['node-cart_catalog-field_cart_shop_link'] = array(
+    'bundle' => 'cart_catalog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'cart_vmode_minimal' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_cart_shop_link',
+    'label' => 'Shop at publisher\'s',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => 'btn btn-info btn-shop',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_maxlength' => 128,
+      'title_value' => 'Shop at publisher\'s',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 41,
+    ),
+  );
+
   // Exported field_instance: 'node-cart_catalog-field_cart_textby'
   $field_instances['node-cart_catalog-field_cart_textby'] = array(
     'bundle' => 'cart_catalog',
@@ -816,7 +875,7 @@ function cart_type_catalog_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_cart_textby',
-    'label' => 'Text by',
+    'label' => 'Texts by',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -829,6 +888,7 @@ function cart_type_catalog_field_default_field_instances() {
           'active' => 0,
           'author' => '',
           'author_current_user' => 1,
+          'status' => -1,
         ),
         'match_operator' => 'CONTAINS',
         'path' => '',
@@ -1021,7 +1081,8 @@ function cart_type_catalog_field_default_field_instances() {
   t('Linkedin link');
   t('Publisher');
   t('RSS link');
-  t('Text by');
+  t('Shop at publisher\'s');
+  t('Texts by');
   t('Twitter link');
   t('Website');
   t('Year published');
