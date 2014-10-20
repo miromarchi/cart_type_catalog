@@ -14,6 +14,7 @@ function cart_type_catalog_user_default_permissions() {
   $permissions['create cart_catalog content'] = array(
     'name' => 'create cart_catalog content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
     ),
     'module' => 'node',
@@ -23,6 +24,7 @@ function cart_type_catalog_user_default_permissions() {
   $permissions['delete any cart_catalog content'] = array(
     'name' => 'delete any cart_catalog content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
     ),
     'module' => 'node',
@@ -32,6 +34,7 @@ function cart_type_catalog_user_default_permissions() {
   $permissions['delete own cart_catalog content'] = array(
     'name' => 'delete own cart_catalog content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
     ),
     'module' => 'node',
@@ -41,6 +44,7 @@ function cart_type_catalog_user_default_permissions() {
   $permissions['edit any cart_catalog content'] = array(
     'name' => 'edit any cart_catalog content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
     ),
     'module' => 'node',
@@ -50,6 +54,7 @@ function cart_type_catalog_user_default_permissions() {
   $permissions['edit own cart_catalog content'] = array(
     'name' => 'edit own cart_catalog content',
     'roles' => array(
+      'administrator' => 'administrator',
       'editor' => 'editor',
     ),
     'module' => 'node',
